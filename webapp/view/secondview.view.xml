@@ -1,0 +1,81 @@
+<mvc:View
+    controllerName="TransferMaterial.transfermaterial.controller.secondview"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    height="100%"
+    xmlns:form="sap.ui.layout.form"
+    	xmlns:f="sap.ui.layout.form"
+>
+    <Shell id="shell">
+        <App id="secondview">
+            <pages>
+                <Page id="page1" title="{i18n>title}"
+                showNavButton="true"
+		        navButtonPress="onNavBack">
+
+                <f:SimpleForm id="SimpleFormChange354wide"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Address"
+			labelSpanXL="4"
+			labelSpanL="3"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="4"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false">
+
+
+                <!-- <form:SimpleForm title="Fill all the inputs" editable="true"> -->
+                    <!-- <content> -->
+                     <!-- <l:VerticalLayout class="sapUiContentPadding " > -->
+                     <!-- <HBox> -->
+                     <Label text="Plant" />
+                     <Input id="idPlant"  showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestPlant" ></Input>
+                     <!-- </HBox> -->
+
+                     <!-- <HBox> -->
+                     <Label text="Source Storage Location" />
+                     <Input id="idSource"  showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestStorage" ></Input>
+                     <!-- </HBox> -->
+
+                     <Label text="Description of Source Storage Location" />
+                     <Text id="getDescriptionofSourceStorage" />
+                     
+
+                     <!-- <HBox> -->
+                     <Label text="Destination Storage Location" />
+                     <Input id="idDestination"  showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestStorage" ></Input>
+                     <!-- </HBox> -->
+
+                     <Label text="Description of Source Storage Location" />
+                     <Text id="getDescriptionofSourceStorageLocation" />
+                     <!-- </l:VerticalLayout> -->
+                   <!-- </content> -->
+                    </f:SimpleForm>
+                   	<!-- </form:SimpleForm> -->
+                   	<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Save"  press="onSave" />
+				<Button text="Cancel" press="onClose" />
+				
+			</Toolbar>
+		</footer>
+        
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

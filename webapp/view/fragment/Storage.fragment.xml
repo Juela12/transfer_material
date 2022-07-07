@@ -1,0 +1,16 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<SelectDialog
+		id="selectDialogStorage"
+		title="Storage"
+		items="{Storage>/}"
+		search=".onValueHelpSearchStorage"
+		confirm=".onValueHelpCloseStorage"
+		cancel=".onValueHelpCloseStorage">
+		<items>
+		<StandardListItem
+			title="{Storage>Lgort}" 
+			description="{Storage>Lgobe}"/>
+			 
+			</items>
+	</SelectDialog>
+</core:FragmentDefinition>

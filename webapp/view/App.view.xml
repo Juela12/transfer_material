@@ -1,0 +1,119 @@
+<mvc:View
+    controllerName="TransferMaterial.transfermaterial.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}"
+                >
+                    <content>
+                    <!-- <l:VerticalLayout class="sapUiContentPadding " > -->
+   
+    <!-- <Label text="Auslagern" /> -->
+     <!-- <Input id="id313" value="313" width="70%" editable="false" class="sapUiSmallMarginEnd"  ></Input>
+
+     	<Button text="Go" press="onSecondview2"  /> -->
+     <!-- <Label text="Einlagern" /> -->
+     <!-- <Input id="id315" value="315" width="70%" editable="false" class="sapUiSmallMarginEnd"></Input>
+     <Button text="Go" press="onSecondview2"  /> -->
+     <!-- <Label text="Lagerort an Lagerort " /> -->
+      <!-- <Input id="id311" value="311" width="70%" editable="false" class="sapUiSmallMarginEnd"></Input>
+      <Button text="Go" press="onSecondview"  /> -->
+      <!-- <Label text="Werk an Werk" /> -->
+       <!-- <Input id="id301" value="301" width="70%" editable="false" class="sapUiSmallMarginEnd"></Input>
+       <Button text="Go" press="onSecondview3"  /> -->
+       <!-- <Label text="Material an Material" /> -->
+        <!-- <Input id="id309" value="309" width="70%" editable="false" class="sapUiSmallMarginEnd"></Input>
+        <Button text="Go" press="onSecondview2"  /> -->
+        <!-- <Label text="Qualität an frei" /> -->
+         <!-- <Input id="id321" value="321" width="70%" editable="false" class="sapUiSmallMarginEnd"></Input>
+         <Button text="Go" press="onSecondview"  /> -->
+         <!-- <Label text="frei an Qualität" /> -->
+          <!-- <Input id="id322" value="322" width="70%" editable="false" class="sapUiSmallMarginEnd"></Input>
+          <Button text="Go" press="onSecondview"  /> -->
+           <!-- <Label text="Gesperrt an Gesperrt im Werk" /> -->
+           <!-- <Input id="id325" value="325" width="70%"  editable="false" class="sapUiSmallMarginEnd"></Input>
+           <Button text="Go" press="onSecondview"  /> -->
+            <!-- <Label text="Gesperrt an frei" />
+            <Input id="id343" value="343" width="70%" editable="false" class="sapUiSmallMarginEnd"></Input>
+            <Button text="Go" press="onSecondview"  /> -->
+              <!-- <Label text="Frei an gesperrt" /> -->
+             <!-- <Input id="id344" value="344" width="70%" editable="false" class="sapUiSmallMarginEnd"></Input>
+             <Button text="Go" press="onSecondview"  /> -->
+   
+   	<!-- </l:VerticalLayout> -->
+
+                   <List 
+                  	headerText="Numbers">
+                <ObjectListItem
+				title="313"
+				type="Active"
+				press="onSecondview2">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="315"
+				type="Active"
+				press="onSecondview2">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="311"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="301"
+				type="Active"
+				press="onSecondview3">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="309"
+				type="Active"
+				press="onSecondview2">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="321"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="322"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="325"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="343"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="344"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+                      </List>
+    
+  </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

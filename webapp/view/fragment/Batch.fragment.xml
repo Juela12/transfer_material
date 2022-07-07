@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<SelectDialog
+		id="selectDialogBatch"
+		title="Batch"
+		items="{Batch>/}"
+		search=".onValueHelpSearchBatch"
+		confirm=".onValueHelpCloseBatch"
+		cancel=".onValueHelpCloseBatch">
+		<items>
+		<StandardListItem
+			title="{Batch>Charg}" />
+			 
+			</items>
+	</SelectDialog>
+</core:FragmentDefinition>

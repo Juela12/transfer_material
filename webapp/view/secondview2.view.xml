@@ -1,0 +1,115 @@
+<mvc:View
+    controllerName="TransferMaterial.transfermaterial.controller.secondview2"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:form="sap.ui.layout.form"
+    	xmlns:f="sap.ui.layout.form"
+>
+    <Shell id="shell">
+        <App id="secondview2"
+        showNavButton="true"
+		        navButtonPress="onNavBack2">
+            <pages>
+                <Page id="page2" title="{i18n>title}"
+                showNavButton="true"
+		        navButtonPress="onNavBack2">
+                	<f:SimpleForm id="SimpleFormChange354wide"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Address"
+			labelSpanXL="4"
+			labelSpanL="3"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="4"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false">
+                <!-- <form:SimpleForm title="Fill all the inputs" editable="true"> -->
+                
+               
+                     <!-- <content> -->
+                     <!-- <l:VerticalLayout class="sapUiContentPadding " >
+                     <HBox> -->
+
+                     
+                     <Label text="Destination material number " />
+                     <Input id="idDestination"   showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestMaterial"></Input>
+                   
+
+
+
+                     <!-- <HBox> -->
+                     <Label text="Description of destination material" />
+                     <Text id="getDescriptionofDestinationMaterial" />
+                     <!-- </HBox> -->
+
+                     <!-- <HBox> -->
+                     <Label text="Destination batch " />
+                     <Input id="idDestinationBatch"  showSuggestion="true"
+			         showValueHelp="true" valueHelpRequest="onValueHelpRequestBatch" ></Input>
+                     <!-- </HBox> -->
+
+                     <!-- <HBox> -->
+                     <Label text="Source Plant" />
+                     <Input id="idSource"   showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestPlant"  ></Input>
+                     <!-- </HBox> -->
+
+                     <Label text="Description of Source Plant" />
+                     <Text id="getDescriptionofSourcePlant" />
+
+                      <!-- <HBox> -->
+                     <Label text="Destination Plant" />
+                     <Input id="idDestinationPlant"   showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestPlant" ></Input>
+                     <!-- </HBox> -->
+
+
+                     <Label text="Description of Destination Plant" />
+                     <Text id="getDescriptionofDestination" />
+
+                    <!-- <HBox> -->
+                     <Label text="Source Storage Location " />
+                     <Input id="idSourceStorageLocation"   showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestStorage" ></Input>
+                     <!-- </HBox> -->
+
+                     <Label text="Description of Source Storage Location " />
+                     <Text id="getDescriptionofSource" />
+
+                     <!-- <HBox> -->
+                     <Label text="Destination Storage Location " />
+                     <Input id="idDestinationStorageLocation"  showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestStorage" ></Input>
+                     <!-- </HBox> -->
+
+                     <Label text="Description of Destination Storage Location" />
+                     <Text id="getDescriptionofDestinationStorage" />
+
+
+                     <!-- </l:VerticalLayout> -->
+                   <!-- </content> -->
+                   </f:SimpleForm>
+                   	<!-- </form:SimpleForm> -->
+                  	<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Save"  press="onSave" />
+				<Button text="Cancel" press="onClose" />
+				
+			</Toolbar>
+		</footer>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

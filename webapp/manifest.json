@@ -1,0 +1,151 @@
+{
+  "_version": "1.32.0",
+  "sap.app": {
+    "id": "TransferMaterial.transfermaterial",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata/sap/ZTRANSFER_MATERIAL_SRV/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.102.1",
+      "libs": {
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "TransferMaterial.transfermaterial.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {}
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "TransferMaterial.transfermaterial.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "RouteApp",
+          "pattern": "RouteApp",
+          "target": [
+            "TargetApp"
+          ]
+        },
+        {
+          "name": "secondview",
+          "pattern": "secondview",
+          "target": [
+            "Targetsecondview"
+          ]
+        },
+        {
+          "name": "secondview2",
+          "pattern": "secondview2",
+          "target": [
+            "Targetsecondview2"
+          ]
+        },
+        {
+          "name": "secondview3",
+          "pattern": "secondview3",
+          "target": [
+            "Targetsecondview3"
+          ]
+        }
+        
+      ],
+      "targets": {
+        "TargetApp": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "",
+          "viewName": "App"
+        },
+        "Targetsecondview": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "secondview",
+          "viewName": "secondview"
+        },
+        "Targetsecondview2": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "secondview2",
+          "viewName": "secondview2"
+        },
+        "Targetsecondview3": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "secondview3",
+          "viewName": "secondview3"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "TransferMaterial.transfermaterial.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

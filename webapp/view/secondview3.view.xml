@@ -1,0 +1,79 @@
+<mvc:View
+    controllerName="TransferMaterial.transfermaterial.controller.secondview3"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form"
+    	xmlns:f="sap.ui.layout.form"
+>
+    <Shell id="shell">
+        <App id="secondview3">
+            <pages>
+                <Page id="page3" title="{i18n>title}"
+                 showNavButton="true"
+		        navButtonPress="onNavBack3">
+                    <!-- <content>
+                  
+                     <l:VerticalLayout class="sapUiContentPadding " >
+                     <HBox> -->
+                      <!-- <form:SimpleForm title="Fill all the inputs" editable="true"> -->
+
+                      <f:SimpleForm id="SimpleFormChange354wide"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Address"
+			labelSpanXL="4"
+			labelSpanL="3"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="4"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false">
+                     <Label text="Source Plant " />
+                     <Input id="idSourcePlant" showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestPlant" ></Input>
+                     <!-- </HBox> -->
+                        
+
+                     <!-- <HBox> -->
+                     <Label text="Source Storage Location " />
+                     <Input id="idSourceStorageLocation"  showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestStorage" ></Input>
+                     <!-- </HBox> -->
+
+                     <Label text="Description of Source Storage Location" />
+                     <Text id="getDescription" />
+
+
+                      <!-- <HBox> -->
+                     <Label text="Destination Storage Location " />
+                     <Input id="idDestinationStorageLocation"   showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestStorage" ></Input>
+                     <!-- </HBox> -->
+
+                     <Label text="Description of Destination Source Storage Location" />
+                     <Text id="getDescriptionofDestination" />
+                     <!-- </l:VerticalLayout>
+                   </content> -->
+                   <!-- </form:SimpleForm> -->
+                    </f:SimpleForm>
+                  	<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Save"  press="onSave" />
+				<Button text="Cancel" press="onClose" />
+				
+			</Toolbar>
+		</footer>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
